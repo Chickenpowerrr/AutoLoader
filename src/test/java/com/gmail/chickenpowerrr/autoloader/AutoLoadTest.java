@@ -14,6 +14,7 @@ import com.gmail.chickenpowerrr.autoloader.loop.Loop;
 import org.junit.Test;
 
 import java.util.Collection;
+import java.util.EventListener;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -63,8 +64,14 @@ public class AutoLoadTest {
 
     @Test
     public void loopTest() {
-        Collection<Loop> loops = AutoLoaderApi.getApi().loadClasses(AutoLoadTest.class, Loop.class);
+        Collection<Loop> loops = AutoLoaderApi.getApi().loadClasses(AutoLoaderApi.class, Loop.class);
         assertEquals(1, loops.size());
+    }
+
+    @Test
+    public void externalTest() {
+        Collection<EventListener> listeners = AutoLoaderApi.getApi().loadClasses(this.getClass(), EventListener.class);
+        assertEquals(1, listeners.size());
     }
 
     private void classAutoLoadTest(Collection<AbstractModule> modules) {

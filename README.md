@@ -37,4 +37,4 @@ use another version until it gets fixed.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the GPL-3.0 - see the [LICENSE](LICENSE) file for details

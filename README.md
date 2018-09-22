@@ -21,33 +21,33 @@ this on a production environment.
 #### Maven
 
 ```xml
- 	<repositories>
- 		<repository>
- 		    <id>jitpack.io</id>
- 		    <url>https://jitpack.io</url>
- 		</repository>
- 	</repositories>
+     <repositories>
+ 	    <repository>
+ 	        <id>jitpack.io</id>
+ 	        <url>https://jitpack.io</url>
+ 	    </repository>
+     </repositories>
     
-	<dependency>
-	    <groupId>com.github.Chickenpowerrr</groupId>
-	    <artifactId>AutoLoader</artifactId>
-	    <version>1.0.1</version>
-	</dependency>        
+    <dependency>
+        <groupId>com.github.Chickenpowerrr</groupId>
+        <artifactId>AutoLoader</artifactId>
+        <version>1.0.1</version>
+    </dependency>        
 ```
 
 #### Gradle
 
 ```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    allprojects {
+	    repositories {
+		    ...
+		    maven { url 'https://jitpack.io' }
+	    }
+    }
 	
-	dependencies {
-	        implementation 'com.github.Chickenpowerrr:AutoLoader:1.0.1'
-	}	
+    dependencies {
+        implementation 'com.github.Chickenpowerrr:AutoLoader:1.0.1'
+    }	
 ```
 
 #### Sbt

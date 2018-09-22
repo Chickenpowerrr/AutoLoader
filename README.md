@@ -16,17 +16,49 @@ this on a production environment.
 * JDK 8+
 
 ### Installing
-To use this project, you'll need to `clean install` this project first. After doing that you'll be able to
-add the following maven dependency to your `pom.xml`
+[![](https://jitpack.io/v/Chickenpowerrr/AutoLoader.svg)](https://jitpack.io/#Chickenpowerrr/AutoLoader) 
+
+#### Maven
 
 ```xml
-        <dependency>
-            <groupId>com.gmail.chickenpowerrr</groupId>
-            <artifactId>autoloader</artifactId>
-            <version>1.0.1</version>
-            <scope>compile</scope>
-        </dependency>
+ 	<repositories>
+ 		<repository>
+ 		    <id>jitpack.io</id>
+ 		    <url>https://jitpack.io</url>
+ 		</repository>
+ 	</repositories>
+    
+	<dependency>
+	    <groupId>com.github.Chickenpowerrr</groupId>
+	    <artifactId>AutoLoader</artifactId>
+	    <version>1.0.1</version>
+	</dependency>        
 ```
+
+#### Gradle
+
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+	dependencies {
+	        implementation 'com.github.Chickenpowerrr:AutoLoader:1.0.1'
+	}	
+```
+
+#### Sbt
+
+```
+    resolvers += "jitpack" at "https://jitpack.io"
+ 	
+    libraryDependencies += "com.github.Chickenpowerrr" % "AutoLoader" % "1.0.1"	
+```
+
+
 
 after that you should be able to use the AutoLoader project inside of your own project!
 

@@ -31,7 +31,7 @@ this on a production environment.
     <dependency>
         <groupId>com.github.Chickenpowerrr</groupId>
         <artifactId>AutoLoader</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </dependency>        
 ```
 
@@ -46,7 +46,7 @@ this on a production environment.
     }
 	
     dependencies {
-        implementation 'com.github.Chickenpowerrr:AutoLoader:1.0.1'
+        implementation 'com.github.Chickenpowerrr:AutoLoader:1.0.2'
     }	
 ```
 
@@ -55,7 +55,7 @@ this on a production environment.
 ```
     resolvers += "jitpack" at "https://jitpack.io"
  	
-    libraryDependencies += "com.github.Chickenpowerrr" % "AutoLoader" % "1.0.1"	
+    libraryDependencies += "com.github.Chickenpowerrr" % "AutoLoader" % "1.0.2"	
 ```
 
 

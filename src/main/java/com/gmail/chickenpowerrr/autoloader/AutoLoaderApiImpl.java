@@ -17,7 +17,7 @@ import java.util.List;
 final class AutoLoaderApiImpl implements AutoLoaderApi {
 
     @Getter(AccessLevel.PACKAGE) private static final AutoLoaderApiImpl instance = new AutoLoaderApiImpl();
-    private final Detector detector = new Detector();
+    private final Loader loader = new Loader();
 
     /**
      * Makes sure nobody else will be able to create a new instance
@@ -43,7 +43,7 @@ final class AutoLoaderApiImpl implements AutoLoaderApi {
      */
     @Override
     public <T> Collection<T> loadClasses(Class<?> mainClass, String packageName, Class<T> loadableTopLayer) {
-        return this.detector.loadClasses(mainClass, packageName, loadableTopLayer);
+        return this.loader.loadClasses(mainClass, packageName, loadableTopLayer);
     }
 
     /**
@@ -75,7 +75,7 @@ final class AutoLoaderApiImpl implements AutoLoaderApi {
      */
     @Override
     public <T> T getInstance(Class<T> clazz) {
-        return this.detector.getInstance(clazz);
+        return this.loader.getInstance(clazz);
     }
 
     /**
@@ -91,6 +91,6 @@ final class AutoLoaderApiImpl implements AutoLoaderApi {
      */
     @Override
     public <T> List<T> getInstances(Class<T> topLayer) {
-        return this.detector.getInstances(topLayer);
+        return this.loader.getInstances(topLayer);
     }
 }

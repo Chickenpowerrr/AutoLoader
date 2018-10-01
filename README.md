@@ -3,7 +3,7 @@ This project is able to locate and load all of the classes that inherit the give
 It will invoke their constructor and cache the instance for you to use it later on.
 By doing this you'll save yourself some work and you'll see that you might see yourself making
 less mistakes when for example registering an EventListener. Please keep in mind that this process is also
-a lot heavier than when you're doing the normal way. 
+a lot heavier than when you're doing the normal way. Made by Chickenpowerrr.
 
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for development 
@@ -61,7 +61,7 @@ this on a production environment.
 
 
 
-after that you should be able to use the AutoLoader project inside of your own project!
+After that you should be able to use the AutoLoader project inside of your own project!
 
 ### Running the tests
 This project uses JUnit to check it is working properly. Please make sure to run those tests when you're compiling.
@@ -70,4 +70,4 @@ use another version until it gets fixed.
 
 ## License
 
-This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details
+This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details.

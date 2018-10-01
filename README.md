@@ -18,6 +18,7 @@ this on a production environment.
 ### Installing
 [![](https://jitpack.io/v/Chickenpowerrr/AutoLoader.svg)](https://jitpack.io/#Chickenpowerrr/AutoLoader) 
 
+# Dependencies
 #### Maven
 
 ```xml
